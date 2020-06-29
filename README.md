@@ -1,4 +1,7 @@
-# Clear Linux* OS `machine-learning-ui` container image with [Jupyter php](https://litipk.github.io/Jupyter-PHP-Installer/) and [Bash](https://github.com/takluyver/bash_kernel) kernels and gui web dev environment in the browser. Includes git extension for Jupyter Lab found here: https://github.com/jupyterlab/jupyterlab-git
+### Clear Linux* OS `machine-learning-ui` container image with [Jupyter php](https://litipk.github.io/Jupyter-PHP-Installer/) and [Bash](https://github.com/takluyver/bash_kernel) kernels and gui web dev environment in the browser. 
+
+#### Includes git extension for Jupyter Lab found here: https://github.com/jupyterlab/jupyterlab-git
+
 ## Clone this repo
 
 ```bash
