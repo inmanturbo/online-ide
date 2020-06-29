@@ -24,7 +24,7 @@ and paste it into your broswers address bar </pre>
 ### start a bash notebook inside juptyer lab
 
 ```bash
-laravel new myfirstproject
+cd root && laravel new myfirstproject
 ```
 
     [32mCrafting application...[39m
@@ -42,7 +42,7 @@ and that's it!
 
 ### up and running with django
 ```bash
-virtualenv django-env
+cd root && virtualenv django-env
 ```
 
     created virtual environment CPython3.8.3.final.0-64 in 309ms
