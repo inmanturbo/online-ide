@@ -3,8 +3,10 @@
 - [Bash](https://github.com/takluyver/bash_kernel) *Copyright (c) 2015, Thomas Kluyver and contributors*  
 kernels and gui web dev/web scraping ready environment in the browser. 
 
-#### Installs open source git extension for Jupyter Lab, source and BSD 3-Clause License found here: https://github.com/jupyterlab/jupyterlab-git *Copyright (c) 2017, Project Jupyter Contributors All rights reserved.*
-#### Dockerfile also installs open source (MIT) laravel installer found here https://github.com/laravel/installer *Copyright (c) Taylor Otwell*
+#### Installs open source git extension for Jupyter Lab, source and BSD 3-Clause License found here: 
+- https://github.com/jupyterlab/jupyterlab-git *Copyright (c) 2017, Project Jupyter Contributors All rights reserved.*
+#### Dockerfile also installs open source (MIT) laravel installer found here: 
+- https://github.com/laravel/installer *Copyright (c) Taylor Otwell*
 
 ## Clone this repo
 
