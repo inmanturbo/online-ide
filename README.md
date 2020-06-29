@@ -1,24 +1,82 @@
-# Clear Linux* OS `machine-learning-ui` container image with [Jupyter php](https://litipk.github.io/Jupyter-PHP-Installer/) and [Bash](https://github.com/takluyver/bash_kernel) kernels
+# Clear Linux* OS `machine-learning-ui` container image with [Jupyter php](https://litipk.github.io/Jupyter-PHP-Installer/) and [Bash](https://github.com/takluyver/bash_kernel) kernels and gui web dev environment in the browser. Includes git extension for Jupyter Lab found here: https://github.com/jupyterlab/jupyterlab-git
 ## Clone this repo
 
 ```bash
-git clone https://github.com/inmanturbo/notebook.git
+git clone https://github.com/inmanturbo/online-ide.git
 ```
 
 ## Change into cloned repo directory
 ```bash
-cd notebook
+cd online-ide
 ```
 ## Build this image
 ```bash
-docker build -t inmanturbo/notebook .
+docker build -t mylab/online-ide .
 ```
-## Run this container
+## Run in container
 ```bash
-docker run --rm -it  -p 8888:8888/tcp inmanturbo/notebook
+docker run -it -p 8888:8888/tcp -p 8000:8000 -p 8080:8080 -m 4G mylab/online-ide
 ```
 <pre> Grab the url with the token from your terminal output 
 and paste it into your broswers address bar </pre>
+
+## up and running with laravel
+### start a bash notebook inside juptyer lab
+
+```bash
+cd root && laravel new myfirstproject
+```
+
+    [32mCrafting application...[39m
+    [32mLoading composer repositories with package information[39m
+    [32mInstalling dependencies (including require-dev) from lock file[39m
+    [32mPackage operations: 97 installs, 0 updates, 0 removals[39m
+      - Installing [32mdoctrine/inflector[39m ([33m2.0.3[39m): Loading from cache
+     ...
+     ...
+    [32mPackage manifest generated successfully.[39m
+    [33mApplication ready! Build something amazing.[39m
+
+
+and that's it!
+
+### up and running with django
+```bash
+cd root && virtualenv django-env
+```
+
+    created virtual environment CPython3.8.3.final.0-64 in 309ms
+      creator CPython3Posix(dest=/django-env, clear=False, global=False)
+      seeder FromAppData(download=False, pip=latest, setuptools=latest, wheel=latest, via=copy, app_data_dir=/.local/share/virtualenv/seed-app-data/v1.0.1)
+      activators BashActivator,CShellActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+
+
+
+```bash
+source django-env/bin/activate
+```
+
+    (django-env) 
+
+
+```bash
+python -m pip install django
+```
+
+    Requirement already satisfied: django in /django-env/lib/python3.8/site-packages (3.0.7)
+    Requirement already satisfied: asgiref~=3.2 in /django-env/lib/python3.8/site-packages (from django) (3.2.10)
+    Requirement already satisfied: pytz in /django-env/lib/python3.8/site-packages (from django) (2020.1)
+    Requirement already satisfied: sqlparse>=0.2.2 in /django-env/lib/python3.8/site-packages (from django) (0.3.1)
+    (django-env) 
+
+
+```bash
+django-admin startproject firstproject
+```
+
+    (django-env) 
+
+
 
 # Original README below
 
