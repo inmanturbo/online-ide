@@ -1,6 +1,7 @@
 ### Clear Linux* OS `machine-learning-ui` container image with [Jupyter php](https://litipk.github.io/Jupyter-PHP-Installer/) *Copyright (c) 2015-2017 Litipk* and [Bash](https://github.com/takluyver/bash_kernel) *Copyright (c) 2015, Thomas Kluyver and contributors*  kernels and gui web dev/web scraping environment in the browser. 
 
-#### Includes git extension for Jupyter Lab found here: https://github.com/jupyterlab/jupyterlab-git
+#### Installs open source git extension for Jupyter Lab, source and BSD 3-Clause License found here: https://github.com/jupyterlab/jupyterlab-git *Copyright (c) 2017, Project Jupyter Contributors All rights reserved.*
+#### Dockerfile also installs open source (MIT) laravel installer found here https://github.com/laravel/installer *Copyright (c) Taylor Otwell*
 
 ## Clone this repo
 
