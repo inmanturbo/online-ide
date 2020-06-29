@@ -21,7 +21,7 @@ RUN swupd bundle-add php-extras wget git nodejs-basic \
     && rm -rf /var/lib/swupd/*
 
 # load dependencies for %load_ext sql in notebooks
-RUN swupd bundle-add devpkg-openssl devpkg-mariadb unzip \
+RUN swupd bundle-add devpkg-openssl devpkg-mariadb sysadmin-basic \
     && pip install pymysql \
     && pip install mysqlclient \
     && rm -rf /var/lib/swupd/*
