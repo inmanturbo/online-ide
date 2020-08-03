@@ -39,8 +39,8 @@ EXPOSE 8080
 CMD ["jupyter-lab"]
 
 COPY jupyter_notebook_config.py /etc/jupyter/
-ADD .bashrc.d /
-COPY .bashrc /
+#ADD .bashrc.d /
+#COPY .bashrc /
 RUN npm install -g yarn \
     && composer global require laravel/installer \
     && ln -s /.composer/vendor/bin/laravel /usr/local/bin/
